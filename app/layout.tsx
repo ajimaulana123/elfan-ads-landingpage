@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/logo.jpg', type: 'image/jpeg' },
-      { url: '/icon.jpg', type: 'image/jpeg' },
+      { url: '/logo.jpg', type: 'image/jpeg' },
     ],
     shortcut: '/logo.jpg',
     apple: [
@@ -116,7 +116,7 @@ export const metadata: Metadata = {
     description: "✅ Jadi KONTEN KREATOR BROADCASTING, PROGRAMMER & AI ASSISTED, DIGITAL MARKETER profesional. Durasi 1 Tahun, 70% Praktik, Sertifikat BSNP & APMI. Mulai 1 Februari - 30 Juni 2025. Daftar Sekarang!",
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/logo.jpg',
         width: 1200,
         height: 630,
         alt: 'PMB TA. 2025-2025 ELFAN AI ACADEMY - Kampus Adab & AI',
@@ -143,7 +143,7 @@ export const metadata: Metadata = {
     title: "PMB TA. 2025-2025 - Kampus Adab & AI | ELFAN AI ACADEMY",
     description: "✅ Jadi KONTEN KREATOR BROADCASTING, PROGRAMMER & AI ASSISTED, DIGITAL MARKETER profesional. Durasi 1 Tahun, 70% Praktik!",
     images: {
-      url: '/og-image.jpg',
+      url: '/logo.jpg',
       alt: 'PMB TA. 2025-2025 ELFAN AI ACADEMY',
     },
   },
