@@ -16,87 +16,92 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:20px_20px]" />
       <div className="absolute inset-0 bg-gradient-to-t from-blue-900/50" />
       
-      <div className="relative container mx-auto px-4 py-20 md:py-32">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative container mx-auto px-4 py-12 md:py-20 lg:py-32">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-8 animate-fade-in">
-            <Badge className="bg-yellow-400 text-blue-900 hover:bg-yellow-300 text-sm font-semibold px-4 py-2">
+          <div className="space-y-6 md:space-y-8 animate-fade-in">
+            <Badge className="bg-yellow-400 text-blue-900 hover:bg-yellow-300 text-xs md:text-sm font-semibold px-3 py-1.5 md:px-4 md:py-2 inline-block">
               🎓 PENERIMAAN MAHASANTRI BARU (PMB) TA. 2025-2025
             </Badge>
             
-            <div className="text-lg md:text-xl text-yellow-300 font-semibold mb-4">
+            <div className="text-base mt-4 md:text-lg lg:text-xl text-yellow-300 font-semibold">
               Mulai 1 Februari - 30 Juni 2025
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-poppins">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight font-poppins">
               Mau jadi
-              <span className="block text-yellow-400">KONTEN KREATOR BROADCASTING</span>
-              yang handal, Jadi PROGRAMMER & AI ASSISTED,
-              <span className="block">Jadi DIGITAL MARKETER profesional?</span>
+              <span className="block text-yellow-400">KONTEN KREATOR</span>
+              <span className="block text-yellow-400">BROADCASTING</span>
+              <span className="block mt-2">yang handal, Jadi</span>
+              <span className="block text-yellow-400">PROGRAMMER & AI</span>
+              <span className="block text-yellow-400">ASSISTED,</span>
+              <span className="block mt-2">Jadi DIGITAL</span>
+              <span className="block text-yellow-400">MARKETER</span>
+              <span className="block">profesional?</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-blue-100 leading-relaxed">
+            <p className="text-base md:text-lg lg:text-xl text-blue-100 leading-relaxed">
               Bisa chuan ratusan hingga jutaan rupiah..
-              <span className="block mt-2 font-semibold">Wujudkan Bersama ELFAN AI ACADEMY</span>
-              <span className="block">akan membimbing kamu sampai bisa dan mahir IT dan langsung dapat kerja.</span>
+              <span className="block mt-2 font-semibold text-yellow-300">Wujudkan Bersama ELFAN AI ACADEMY</span>
+              <span className="block mt-1">akan membimbing kamu sampai bisa dan mahir IT dan langsung dapat kerja.</span>
             </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 py-6">
-              <div className="text-center">
+            <div className="grid grid-cols-3 gap-3 md:gap-4 py-4 md:py-6">
+              <div className="text-center bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-4">
                 <div className="flex items-center justify-center mb-2">
-                  <GraduationCap className="w-8 h-8 text-yellow-400" />
+                  <GraduationCap className="w-6 h-6 md:w-8 md:h-8 text-yellow-400" />
                 </div>
-                <div className="text-2xl md:text-3xl font-bold">1 Tahun</div>
-                <div className="text-sm text-blue-200">Durasi Belajar</div>
+                <div className="text-xl md:text-2xl lg:text-3xl font-bold">1 Tahun</div>
+                <div className="text-xs md:text-sm text-blue-200">Durasi Belajar</div>
               </div>
-              <div className="text-center">
+              <div className="text-center bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-4">
                 <div className="flex items-center justify-center mb-2">
-                  <Award className="w-8 h-8 text-yellow-400" />
+                  <Award className="w-6 h-6 md:w-8 md:h-8 text-yellow-400" />
                 </div>
-                <div className="text-2xl md:text-3xl font-bold">70%</div>
-                <div className="text-sm text-blue-200">Praktik</div>
+                <div className="text-xl md:text-2xl lg:text-3xl font-bold">70%</div>
+                <div className="text-xs md:text-sm text-blue-200">Praktik</div>
               </div>
-              <div className="text-center">
+              <div className="text-center bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-4">
                 <div className="flex items-center justify-center mb-2">
-                  <Users className="w-8 h-8 text-yellow-400" />
+                  <Users className="w-6 h-6 md:w-8 md:h-8 text-yellow-400" />
                 </div>
-                <div className="text-2xl md:text-3xl font-bold">30%</div>
-                <div className="text-sm text-blue-200">Teori</div>
+                <div className="text-xl md:text-2xl lg:text-3xl font-bold">30%</div>
+                <div className="text-xs md:text-sm text-blue-200">Teori</div>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
               <Button 
                 size="lg" 
                 onClick={scrollToForm}
-                className="bg-yellow-400 text-blue-900 hover:bg-yellow-300 font-semibold text-lg px-8 py-6 shadow-xl hover:shadow-2xl transition-all"
+                className="bg-yellow-400 text-blue-900 hover:bg-yellow-300 font-semibold text-base md:text-lg px-6 md:px-8 py-5 md:py-6 shadow-xl hover:shadow-2xl transition-all w-full sm:w-auto"
               >
                 Daftar Sekarang
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
               </Button>
               <Button 
                 size="lg" 
                 variant="outline"
-                className="border-2 border-yellow-400 bg-yellow-400/10 text-yellow-400 hover:bg-yellow-400 hover:text-blue-900 font-semibold text-lg px-8 py-6 backdrop-blur-sm"
+                className="border-2 border-yellow-400 bg-yellow-400/10 text-yellow-400 hover:bg-yellow-400 hover:text-blue-900 font-semibold text-base md:text-lg px-6 md:px-8 py-5 md:py-6 backdrop-blur-sm w-full sm:w-auto"
               >
                 Info Beasiswa
               </Button>
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex flex-wrap gap-4 items-center pt-4">
-              <Badge variant="secondary" className="bg-white/10 text-white border-white/20">
+            <div className="flex flex-wrap gap-2 md:gap-4 items-center pt-4">
+              <Badge variant="secondary" className="bg-white/10 text-white border-white/20 text-xs md:text-sm">
                 ✓ Sertifikat BSNP & APMI
               </Badge>
-              <Badge variant="secondary" className="bg-white/10 text-white border-white/20">
+              <Badge variant="secondary" className="bg-white/10 text-white border-white/20 text-xs md:text-sm">
                 ✓ Garansi Kompetensi
               </Badge>
-              <Badge variant="secondary" className="bg-white/10 text-white border-white/20">
+              <Badge variant="secondary" className="bg-white/10 text-white border-white/20 text-xs md:text-sm">
                 ✓ Berasrama AC & CCTV
               </Badge>
-              <Badge variant="secondary" className="bg-white/10 text-white border-white/20">
+              <Badge variant="secondary" className="bg-white/10 text-white border-white/20 text-xs md:text-sm">
                 ✓ Kampus Adab & AI
               </Badge>
             </div>
