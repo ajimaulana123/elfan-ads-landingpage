@@ -63,7 +63,7 @@ const testimonials = [
   {
     name: 'Nama Alumni',
     program: 'Program Studi',
-    year: '2024',
+    year: '2026',
     image: '👨‍💻', // Emoji atau URL image
     rating: 5,
     text: 'Testimoni lengkap...',

@@ -13,57 +13,56 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import { CheckCircle2, Loader2 } from 'lucide-react'
+import { Loader2 } from 'lucide-react'
 
 export function RegistrationForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [isSuccess, setIsSuccess] = useState(false)
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000))
+    const formData = new FormData(e.currentTarget)
+    const data = {
+      fullname: formData.get('fullname'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      city: formData.get('city'),
+      education: formData.get('education'),
+      year: formData.get('year'),
+      program: formData.get('program'),
+      scholarship: formData.get('scholarship'),
+    }
+
+    // Format WhatsApp message
+    const message = `*PENDAFTARAN PMB 2026/2026*
+
+📝 *Data Calon Mahasiswa:*
+Nama: ${data.fullname}
+Email: ${data.email}
+No. WhatsApp: ${data.phone}
+Kota Asal: ${data.city}
+
+🎓 *Informasi Pendidikan:*
+Pendidikan Terakhir: ${data.education}
+Tahun Lulus: ${data.year}
+
+📚 *Program yang Diminati:*
+${data.program}
+
+💰 *Beasiswa:*
+${data.scholarship}
+
+Mohon informasi lebih lanjut tentang proses pendaftaran. Terima kasih!`
+
+    // WhatsApp number (ganti dengan nomor WA kampus)
+    const waNumber = '6281234567890' // GANTI DENGAN NOMOR WA KAMPUS
+    const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`
+    
+    // Open WhatsApp
+    window.open(waUrl, '_blank')
     
     setIsSubmitting(false)
-    setIsSuccess(true)
-  }
-
-  if (isSuccess) {
-    return (
-      <section id="registration-form" className="py-20 bg-gradient-to-b from-white to-gray-50">
-        <div className="container mx-auto px-4">
-          <Card className="max-w-2xl mx-auto shadow-2xl overflow-hidden">
-            <CardContent className="p-12 text-center">
-              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <CheckCircle2 className="w-12 h-12 text-green-600" />
-              </div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                Pendaftaran Berhasil! 🎉
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Terima kasih telah mendaftar. Tim kami akan menghubungi Anda dalam 1x24 jam untuk proses selanjutnya.
-              </p>
-              <div className="bg-blue-50 rounded-lg p-4 mb-6">
-                <p className="text-sm text-blue-800">
-                  <strong>Langkah Selanjutnya:</strong><br />
-                  1. Cek email untuk konfirmasi pendaftaran<br />
-                  2. Siapkan dokumen yang diperlukan<br />
-                  3. Tunggu panggilan dari tim kami
-                </p>
-              </div>
-              <Button 
-                onClick={() => setIsSuccess(false)}
-                className="bg-blue-600 hover:bg-blue-700"
-              >
-                Daftar Lagi
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-    )
   }
 
   return (
@@ -85,20 +84,21 @@ export function RegistrationForm() {
           </div>
 
           <Card className="shadow-xl overflow-hidden">
-            <CardHeader className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-t-lg">
-              <CardTitle className="text-2xl">Formulir Pendaftaran PMB 2024/2025</CardTitle>
+            <CardHeader className="bg-gradient-to-r from-blue-600 to-indigo-700 py-6 mt-[-27px] text-white">
+              <CardTitle className="text-2xl">Formulir Pendaftaran PMB 2026/2026</CardTitle>
               <CardDescription className="text-blue-100">
                 Gratis biaya pendaftaran • Proses cepat 1x24 jam • Beasiswa hingga 100%
               </CardDescription>
             </CardHeader>
-            <CardContent className="p-8">
+            <CardContent className="p-6 pt-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Personal Info */}
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="fullname">Nama Lengkap *</Label>
                     <Input 
-                      id="fullname" 
+                      id="fullname"
+                      name="fullname"
                       placeholder="Masukkan nama lengkap"
                       required
                       className="focus:border-blue-500"
@@ -107,7 +107,8 @@ export function RegistrationForm() {
                   <div className="space-y-2">
                     <Label htmlFor="email">Email *</Label>
                     <Input 
-                      id="email" 
+                      id="email"
+                      name="email"
                       type="email"
                       placeholder="email@example.com"
                       required
@@ -120,7 +121,8 @@ export function RegistrationForm() {
                   <div className="space-y-2">
                     <Label htmlFor="phone">No. WhatsApp *</Label>
                     <Input 
-                      id="phone" 
+                      id="phone"
+                      name="phone"
                       type="tel"
                       placeholder="08xxxxxxxxxx"
                       required
@@ -130,7 +132,8 @@ export function RegistrationForm() {
                   <div className="space-y-2">
                     <Label htmlFor="city">Kota Asal *</Label>
                     <Input 
-                      id="city" 
+                      id="city"
+                      name="city"
                       placeholder="Masukkan kota asal"
                       required
                       className="focus:border-blue-500"
@@ -142,29 +145,29 @@ export function RegistrationForm() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="education">Pendidikan Terakhir *</Label>
-                    <Select required>
+                    <Select name="education" required>
                       <SelectTrigger className="focus:border-blue-500">
                         <SelectValue placeholder="Pilih pendidikan" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="sma">SMA/SMK/MA</SelectItem>
-                        <SelectItem value="d3">D3</SelectItem>
-                        <SelectItem value="s1">S1</SelectItem>
+                        <SelectItem value="SMA/SMK/MA">SMA/SMK/MA</SelectItem>
+                        <SelectItem value="D3">D3</SelectItem>
+                        <SelectItem value="S1">S1</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="year">Tahun Lulus *</Label>
-                    <Select required>
+                    <Select name="year" required>
                       <SelectTrigger className="focus:border-blue-500">
                         <SelectValue placeholder="Pilih tahun" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="2024">2024</SelectItem>
+                        <SelectItem value="2026">2026</SelectItem>
                         <SelectItem value="2023">2023</SelectItem>
                         <SelectItem value="2022">2022</SelectItem>
                         <SelectItem value="2021">2021</SelectItem>
-                        <SelectItem value="older">Sebelum 2021</SelectItem>
+                        <SelectItem value="Sebelum 2021">Sebelum 2021</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -173,19 +176,19 @@ export function RegistrationForm() {
                 {/* Program Selection */}
                 <div className="space-y-2">
                   <Label htmlFor="program">Program Studi yang Diminati *</Label>
-                  <Select required>
+                  <Select name="program" required>
                     <SelectTrigger className="focus:border-blue-500">
                       <SelectValue placeholder="Pilih program studi" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="ti">Teknik Informatika</SelectItem>
-                      <SelectItem value="si">Sistem Informasi</SelectItem>
-                      <SelectItem value="mb">Manajemen Bisnis</SelectItem>
-                      <SelectItem value="ak">Akuntansi</SelectItem>
-                      <SelectItem value="ts">Teknik Sipil</SelectItem>
-                      <SelectItem value="dkv">Desain Komunikasi Visual</SelectItem>
-                      <SelectItem value="ik">Ilmu Kesehatan</SelectItem>
-                      <SelectItem value="other">Lainnya</SelectItem>
+                      <SelectItem value="Teknik Informatika">Teknik Informatika</SelectItem>
+                      <SelectItem value="Sistem Informasi">Sistem Informasi</SelectItem>
+                      <SelectItem value="Manajemen Bisnis">Manajemen Bisnis</SelectItem>
+                      <SelectItem value="Akuntansi">Akuntansi</SelectItem>
+                      <SelectItem value="Teknik Sipil">Teknik Sipil</SelectItem>
+                      <SelectItem value="Desain Komunikasi Visual">Desain Komunikasi Visual</SelectItem>
+                      <SelectItem value="Ilmu Kesehatan">Ilmu Kesehatan</SelectItem>
+                      <SelectItem value="Lainnya">Lainnya</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -193,14 +196,14 @@ export function RegistrationForm() {
                 {/* Scholarship Interest */}
                 <div className="space-y-2">
                   <Label htmlFor="scholarship">Tertarik dengan Beasiswa? *</Label>
-                  <Select required>
+                  <Select name="scholarship" required>
                     <SelectTrigger className="focus:border-blue-500">
                       <SelectValue placeholder="Pilih opsi" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="yes">Ya, saya tertarik</SelectItem>
-                      <SelectItem value="no">Tidak, terima kasih</SelectItem>
-                      <SelectItem value="info">Butuh informasi lebih lanjut</SelectItem>
+                      <SelectItem value="Ya, saya tertarik">Ya, saya tertarik</SelectItem>
+                      <SelectItem value="Tidak, terima kasih">Tidak, terima kasih</SelectItem>
+                      <SelectItem value="Butuh informasi lebih lanjut">Butuh informasi lebih lanjut</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>

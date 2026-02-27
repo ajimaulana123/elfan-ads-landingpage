@@ -1,49 +1,49 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { BookOpen, Briefcase, Code, Heart, Building2, Palette } from 'lucide-react'
+import { Video, Code, TrendingUp, Cpu, Megaphone, Smartphone } from 'lucide-react'
 
 const programs = [
   {
-    icon: Code,
-    title: 'Teknik Informatika',
-    description: 'Menjadi ahli teknologi dan programmer handal dengan kurikulum berbasis industri',
+    icon: Video,
+    title: 'Content Creator & Broadcasting',
+    description: 'Jadi content creator handal dan kuasai broadcasting profesional. Bisa hasilkan ratusan hingga jutaan rupiah dari konten kreatif',
     badge: 'Paling Diminati',
+    color: 'from-red-500 to-pink-500'
+  },
+  {
+    icon: Code,
+    title: 'Programmer & AI Engineer',
+    description: 'Kuasai programming dan teknologi AI terkini. Langsung bisa kerja sebagai programmer profesional dengan gaji tinggi',
+    badge: 'High Demand',
     color: 'from-blue-500 to-cyan-500'
   },
   {
-    icon: Briefcase,
-    title: 'Manajemen Bisnis',
-    description: 'Kembangkan jiwa entrepreneur dan leadership untuk menjadi pemimpin masa depan',
-    badge: 'Akreditasi A',
-    color: 'from-purple-500 to-pink-500'
+    icon: TrendingUp,
+    title: 'Digital Marketing',
+    description: 'Jadi digital marketer profesional yang mahir strategi marketing online dan social media untuk bisnis modern',
+    badge: 'Populer',
+    color: 'from-purple-500 to-indigo-500'
   },
   {
-    icon: Heart,
-    title: 'Ilmu Kesehatan',
-    description: 'Berkontribusi untuk kesehatan masyarakat dengan pendidikan medis terkini',
-    badge: 'Beasiswa 100%',
-    color: 'from-red-500 to-orange-500'
-  },
-  {
-    icon: Building2,
-    title: 'Teknik Sipil',
-    description: 'Bangun infrastruktur negara dengan ilmu teknik sipil yang komprehensif',
-    badge: 'Terakreditasi',
+    icon: Cpu,
+    title: 'AI & Machine Learning',
+    description: 'Pelajari teknologi AI dan machine learning untuk menjadi ahli di bidang kecerdasan buatan',
+    badge: 'Future Tech',
     color: 'from-green-500 to-emerald-500'
   },
   {
-    icon: Palette,
-    title: 'Desain Komunikasi Visual',
-    description: 'Wujudkan kreativitas menjadi karya seni dan desain yang bernilai tinggi',
-    badge: 'Populer',
-    color: 'from-yellow-500 to-amber-500'
+    icon: Megaphone,
+    title: 'Social Media Management',
+    description: 'Kelola social media profesional dan bangun brand awareness untuk bisnis dan personal branding',
+    badge: 'Trending',
+    color: 'from-yellow-500 to-orange-500'
   },
   {
-    icon: BookOpen,
-    title: 'Pendidikan',
-    description: 'Menjadi pendidik profesional yang membentuk generasi masa depan bangsa',
-    badge: 'Akreditasi A',
-    color: 'from-indigo-500 to-blue-500'
+    icon: Smartphone,
+    title: 'Mobile App Development',
+    description: 'Buat aplikasi mobile Android dan iOS yang powerful dan user-friendly untuk berbagai kebutuhan',
+    badge: 'In Demand',
+    color: 'from-indigo-500 to-purple-500'
   }
 ]
 
@@ -57,11 +57,11 @@ export function ProgramSection() {
             Program Studi Unggulan
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 font-poppins">
-            Pilih Program Studi
-            <span className="block text-blue-600">Sesuai Passion-mu</span>
+            Pilih Program
+            <span className="block text-blue-600">Sesuai Minat & Bakatmu</span>
           </h2>
           <p className="text-lg text-gray-600">
-            Lebih dari 50 program studi terakreditasi dengan kurikulum yang disesuaikan dengan kebutuhan industri
+            Program unggulan dengan kurikulum adaptif yang disesuaikan dengan kebutuhan industri kreatif digital dan perkembangan IT
           </p>
         </div>
 
@@ -100,10 +100,10 @@ export function ProgramSection() {
         {/* CTA */}
         <div className="text-center mt-12">
           <p className="text-gray-600 mb-4">
-            Tidak menemukan program yang kamu cari?
+            Mau tahu lebih detail tentang program kami?
           </p>
           <button className="text-blue-600 font-semibold hover:underline cursor-pointer">
-            Lihat Semua Program Studi (50+) →
+            Konsultasi Gratis via WhatsApp →
           </button>
         </div>
       </div>

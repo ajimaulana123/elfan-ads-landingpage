@@ -169,7 +169,7 @@ Tampilkan logo perusahaan tempat alumni bekerja:
 
 ### Test Headline
 
-**Versi A:** "Pendaftaran Mahasiswa Baru 2024"
+**Versi A:** "Pendaftaran Mahasiswa Baru 2026"
 **Versi B:** "Wujudkan Impian Masa Depan Cemerlang"
 
 ### Test CTA
@@ -216,7 +216,7 @@ Gunakan **bold** untuk:
 ### 1. Keywords
 
 Target keywords:
-- PMB 2024
+- PMB 2026
 - Pendaftaran mahasiswa baru
 - Beasiswa kuliah
 - Universitas terbaik
@@ -224,8 +224,8 @@ Target keywords:
 
 ### 2. Natural Integration
 
-❌ **Keyword Stuffing**: "PMB 2024 pendaftaran mahasiswa baru PMB 2024"
-✅ **Natural**: "Pendaftaran Mahasiswa Baru (PMB) 2024 sudah dibuka"
+❌ **Keyword Stuffing**: "PMB 2026 pendaftaran mahasiswa baru PMB 2026"
+✅ **Natural**: "Pendaftaran Mahasiswa Baru (PMB) 2026 sudah dibuka"
 
 ### 3. Long-tail Keywords
 

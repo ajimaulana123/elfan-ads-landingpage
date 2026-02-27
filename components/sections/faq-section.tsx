@@ -7,36 +7,44 @@ import { ChevronDown } from 'lucide-react'
 
 const faqs = [
   {
-    question: 'Bagaimana cara mendaftar sebagai mahasiswa baru?',
-    answer: 'Pendaftaran sangat mudah! Cukup isi formulir online di website kami, upload dokumen yang diperlukan (KTP, Ijazah, Foto), dan tunggu konfirmasi dari tim kami dalam 1x24 jam. Seluruh proses bisa dilakukan secara online tanpa perlu datang ke kampus.'
+    question: 'Apa itu PENERIMAAN MAHASANTRI BARU (PMB)?',
+    answer: 'PMB adalah program penerimaan mahasiswa baru di ELFAN AI ACADEMY untuk Tahun Akademik 2025-2025. Pendaftaran dibuka mulai 1 Februari sampai 30 Juni 2025. Kami menerima calon mahasantri yang ingin belajar IT dengan pendekatan Adab & AI.'
   },
   {
-    question: 'Apakah ada beasiswa yang tersedia?',
-    answer: 'Ya! Kami menyediakan berbagai jenis beasiswa: Beasiswa Prestasi (hingga 100%), Beasiswa KIP Kuliah, Beasiswa Hafiz Quran, Beasiswa Atlet, dan Beasiswa Kurang Mampu. Anda bisa mendaftar beasiswa bersamaan dengan pendaftaran mahasiswa baru.'
+    question: 'Berapa lama durasi belajar di ELFAN AI ACADEMY?',
+    answer: 'Durasi belajar hanya 1 tahun! Masa study singkat, padat, efektif dan efisien. Dengan sistem belajar 70% praktik dan 30% teori, kamu akan langsung mahir dan siap kerja setelah lulus.'
   },
   {
-    question: 'Berapa biaya kuliah per semester?',
-    answer: 'Biaya kuliah bervariasi tergantung program studi, mulai dari Rp 3.000.000 hingga Rp 8.000.000 per semester. Kami juga menyediakan sistem cicilan 0% dan berbagai skema pembayaran yang fleksibel untuk meringankan beban orang tua.'
+    question: 'Apa saja program yang tersedia?',
+    answer: 'Kami memiliki 3 program unggulan: 1) Desain Media Broadcasting & AI (edit foto, video, kreatif AI), 2) Multimedia (fotografi, videografi, editing profesional), 3) Programming & AI Engineering (web development, mobile app, AI agent). Semua program dilengkapi dengan pembinaan Adab & Entrepreneur.'
   },
   {
-    question: 'Apakah ijazah dan akreditasi kampus diakui?',
-    answer: 'Tentu! Kampus kami terakreditasi oleh BAN-PT dengan akreditasi A dan B untuk berbagai program studi. Ijazah kami diakui secara nasional dan internasional, sehingga lulusan kami bisa bekerja di mana saja.'
+    question: 'Apakah ada beasiswa atau keringanan biaya?',
+    answer: 'Ya! Kami menyediakan berbagai program beasiswa dan keringanan biaya untuk calon mahasantri berprestasi dan kurang mampu. Biaya kuliah juga sangat terjangkau sebagai investasi terbaik untuk masa depan. Hubungi kami untuk informasi lebih detail.'
   },
   {
-    question: 'Kapan jadwal perkuliahan dimulai?',
-    answer: 'Perkuliahan dimulai setiap bulan September untuk semester ganjil dan Februari untuk semester genap. Namun, pendaftaran dibuka sepanjang tahun. Semakin cepat Anda mendaftar, semakin besar peluang mendapatkan beasiswa.'
+    question: 'Apa yang dimaksud dengan Kampus Adab & AI?',
+    answer: 'ELFAN AI ACADEMY adalah kampus yang menggabungkan kompetensi IT dengan pembinaan Adab Islami. Selain belajar teknologi, mahasantri juga mendapat pembinaan Ilmu Syar\'i, Tahsin & Tahfidz, Literasi, dan Entrepreneur. Kami mencetak generasi IT yang kompeten dan beradab tinggi.'
   },
   {
-    question: 'Apakah ada program kelas karyawan?',
-    answer: 'Ya, kami memiliki program kelas karyawan dengan jadwal kuliah di akhir pekan (Sabtu-Minggu) atau malam hari. Cocok untuk Anda yang sudah bekerja namun ingin melanjutkan pendidikan ke jenjang yang lebih tinggi.'
+    question: 'Apakah lulusan mendapat sertifikat?',
+    answer: 'Ya! Lulusan akan mendapatkan Sertifikat Nasional dari BSNP (Badan Nasional Sertifikasi Profesi) dan APMI (Asosiasi Profesi Multimedia Indonesia) yang diakui secara nasional. Plus portofolio karya sebagai bukti kompetensi.'
+  },
+  {
+    question: 'Bagaimana sistem belajarnya?',
+    answer: 'Sistem belajar kami 70% praktik dan 30% teori. Kamu akan langsung praktik dengan tools profesional, dibimbing dosen praktisi ahli, dan mengerjakan project nyata. Fasilitas lengkap: Smart Lab, Studio Podcast, Multimedia Tools, Smart Class AI, Drone, Data Center, dan masih banyak lagi.'
+  },
+  {
+    question: 'Apakah ada program asrama?',
+    answer: 'Ya! Kami menyediakan asrama yang aman dan nyaman dilengkapi dengan ranjang susun, full AC dan CCTV. Asrama juga dilengkapi dengan Masjid untuk pembinaan ruhiyah. Lingkungan kondusif untuk belajar dan berkembang.'
   },
   {
     question: 'Bagaimana prospek kerja setelah lulus?',
-    answer: 'Sangat baik! 95% alumni kami terserap di dunia kerja dalam 6 bulan setelah lulus. Kami memiliki Career Center yang membantu mahasiswa mendapatkan pekerjaan, magang, dan membangun networking dengan 500+ perusahaan mitra.'
+    answer: 'Sangat baik! Alumni kami langsung bisa kerja karena sudah dibekali skill praktis dan portofolio. Banyak yang bekerja sebagai Content Creator, Programmer, Digital Marketer, atau bahkan membangun bisnis sendiri dengan penghasilan ratusan hingga jutaan rupiah per bulan.'
   },
   {
-    question: 'Apakah bisa pindah dari kampus lain?',
-    answer: 'Bisa! Kami menerima mahasiswa pindahan dari kampus lain dengan proses konversi SKS. Silakan hubungi tim admisi kami untuk konsultasi lebih lanjut mengenai persyaratan dan prosedur pindah kampus.'
+    question: 'Bagaimana cara mendaftar?',
+    answer: 'Pendaftaran sangat mudah! Cukup isi formulir online di website ini, atau hubungi kami via WhatsApp. Tim kami akan membantu proses pendaftaran kamu. Pendaftaran dibuka mulai 1 Februari - 30 Juni 2025. Daftar sekarang sebelum kuota penuh!'
   }
 ]
 

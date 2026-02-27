@@ -1,0 +1,69 @@
+# robots.txt untuk ELFAN AI ACADEMY
+# Optimized untuk Google, Bing, ChatGPT, Gemini, Claude, dan AI search engines
+
+# Allow all search engines
+User-agent: *
+Allow: /
+Crawl-delay: 0
+
+# Google Bot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Google Image Bot
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing Bot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# ChatGPT Bot (OpenAI)
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 0
+
+# Google Extended (Gemini AI)
+User-agent: Google-Extended
+Allow: /
+Crawl-delay: 0
+
+# Claude Bot (Anthropic)
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 0
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 0
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Facebook Bot
+User-agent: facebookexternalhit
+Allow: /
+
+# Twitter Bot
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn Bot
+User-agent: LinkedInBot
+Allow: /
+
+# WhatsApp Bot
+User-agent: WhatsApp
+Allow: /
+
+# Sitemap location
+Sitemap: https://elfanacademy.ac.id/sitemap.xml
+
+# Disallow admin/private areas (if any)
+# User-agent: *
+# Disallow: /admin/
+# Disallow: /private/

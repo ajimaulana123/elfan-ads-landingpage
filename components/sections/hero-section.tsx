@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { ArrowRight, GraduationCap, Award, Users } from 'lucide-react'
+import Image from 'next/image'
 
 export function HeroSection() {
   const scrollToForm = () => {
@@ -20,18 +21,24 @@ export function HeroSection() {
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in">
             <Badge className="bg-yellow-400 text-blue-900 hover:bg-yellow-300 text-sm font-semibold px-4 py-2">
-              🎓 Pendaftaran Dibuka!
+              🎓 PENERIMAAN MAHASANTRI BARU (PMB) TA. 2025-2025
             </Badge>
             
+            <div className="text-lg md:text-xl text-yellow-300 font-semibold mb-4">
+              Mulai 1 Februari - 30 Juni 2025
+            </div>
+            
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-poppins">
-              Wujudkan Impian
-              <span className="block text-yellow-400">Masa Depan Cemerlang</span>
-              Bersama Kami
+              Mau jadi
+              <span className="block text-yellow-400">KONTEN KREATOR BROADCASTING</span>
+              yang handal, Jadi PROGRAMMER & AI ASSISTED,
+              <span className="block">Jadi DIGITAL MARKETER profesional?</span>
             </h1>
             
             <p className="text-lg md:text-xl text-blue-100 leading-relaxed">
-              Bergabunglah dengan ribuan mahasiswa sukses yang telah memulai perjalanan karir mereka. 
-              Dapatkan pendidikan berkualitas dengan fasilitas modern dan dosen berpengalaman.
+              Bisa chuan ratusan hingga jutaan rupiah..
+              <span className="block mt-2 font-semibold">Wujudkan Bersama ELFAN AI ACADEMY</span>
+              <span className="block">akan membimbing kamu sampai bisa dan mahir IT dan langsung dapat kerja.</span>
             </p>
 
             {/* Stats */}
@@ -40,22 +47,22 @@ export function HeroSection() {
                 <div className="flex items-center justify-center mb-2">
                   <GraduationCap className="w-8 h-8 text-yellow-400" />
                 </div>
-                <div className="text-2xl md:text-3xl font-bold">50+</div>
-                <div className="text-sm text-blue-200">Program Studi</div>
+                <div className="text-2xl md:text-3xl font-bold">1 Tahun</div>
+                <div className="text-sm text-blue-200">Durasi Belajar</div>
               </div>
               <div className="text-center">
                 <div className="flex items-center justify-center mb-2">
                   <Award className="w-8 h-8 text-yellow-400" />
                 </div>
-                <div className="text-2xl md:text-3xl font-bold">A</div>
-                <div className="text-sm text-blue-200">Akreditasi</div>
+                <div className="text-2xl md:text-3xl font-bold">70%</div>
+                <div className="text-sm text-blue-200">Praktik</div>
               </div>
               <div className="text-center">
                 <div className="flex items-center justify-center mb-2">
                   <Users className="w-8 h-8 text-yellow-400" />
                 </div>
-                <div className="text-2xl md:text-3xl font-bold">10K+</div>
-                <div className="text-sm text-blue-200">Alumni Sukses</div>
+                <div className="text-2xl md:text-3xl font-bold">30%</div>
+                <div className="text-sm text-blue-200">Teori</div>
               </div>
             </div>
 
@@ -81,13 +88,16 @@ export function HeroSection() {
             {/* Trust Indicators */}
             <div className="flex flex-wrap gap-4 items-center pt-4">
               <Badge variant="secondary" className="bg-white/10 text-white border-white/20">
-                ✓ Beasiswa hingga 100%
+                ✓ Sertifikat BSNP & APMI
               </Badge>
               <Badge variant="secondary" className="bg-white/10 text-white border-white/20">
-                ✓ Cicilan 0%
+                ✓ Garansi Kompetensi
               </Badge>
               <Badge variant="secondary" className="bg-white/10 text-white border-white/20">
-                ✓ Gratis Biaya Pendaftaran
+                ✓ Berasrama AC & CCTV
+              </Badge>
+              <Badge variant="secondary" className="bg-white/10 text-white border-white/20">
+                ✓ Kampus Adab & AI
               </Badge>
             </div>
           </div>
@@ -95,9 +105,13 @@ export function HeroSection() {
           {/* Right Content - Image/Illustration */}
           <div className="relative hidden lg:block">
             <div className="relative z-10">
-              <img 
+              <Image 
                 src="/hero-image.jpg" 
                 alt="Kampus Modern dengan Fasilitas Lengkap"
+                width={600}
+                height={400}
+                priority
+                quality={85}
                 className="rounded-3xl shadow-2xl w-full h-auto object-cover"
               />
               

@@ -1,0 +1,27 @@
+{
+  "name": "ELFAN AI ACADEMY - PMB TA. 2025-2025",
+  "short_name": "Elfan Academy",
+  "description": "PENERIMAAN MAHASANTRI BARU (PMB) TA. 2025-2025 - Kampus Adab & AI. Jadi KONTEN KREATOR BROADCASTING, PROGRAMMER & AI ASSISTED, DIGITAL MARKETER profesional. Sertifikat BSNP & APMI",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "technology"],
+  "lang": "id-ID",
+  "dir": "ltr"
+}

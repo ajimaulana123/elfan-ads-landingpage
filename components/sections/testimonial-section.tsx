@@ -6,40 +6,20 @@ import { Star, Quote } from 'lucide-react'
 
 const testimonials = [
   {
-    name: 'Budi Santoso',
-    program: 'Teknik Informatika',
-    year: '2023',
-    image: '👨‍💻',
+    name: 'Ust. Zulkifili Muhammad Ali',
+    title: "Da'i Nasional",
+    image: '🕌',
     rating: 5,
-    text: 'Kampus ini benar-benar mengubah hidupku! Dari yang tidak tahu coding sama sekali, sekarang aku sudah bekerja di perusahaan startup ternama dengan gaji yang memuaskan.',
-    achievement: 'Software Engineer di Gojek'
+    text: 'Masyaallah dan saya melihat ini menjadi salah satu di antara bab fardu kifayah bahwa umat ini harus menyediakan generasi yang tangguh dalam menguasai dunia IT ke depan kita akan menjadi penguasa dunia dan kita harus punya anak-anak yang hebat di bidang IT, di samping itu ternyata di sini juga bukan hanya semata-mata teknologi yang diajarkan tetapi juga disiapkan untuk bisa mandiri melalui entrepreneurshipnya. Masyaallah ya 1 tahun anak kita menjadi sesuatu, anak kita menjadi penggenggam masa depan dan juga penguasa teknologi, program yang sangat baik dan mulia.',
+    achievement: 'Tokoh Nasional'
   },
   {
-    name: 'Siti Nurhaliza',
-    program: 'Manajemen Bisnis',
-    year: '2022',
-    image: '👩‍💼',
+    name: 'Ibu RIANA KUSUMA SARI',
+    title: 'Wali Mahasantri Asal Semarang',
+    image: '👩',
     rating: 5,
-    text: 'Beasiswa 100% yang aku dapatkan sangat membantu. Dosennya profesional dan selalu support mahasiswa untuk berkembang. Sekarang aku punya bisnis sendiri!',
-    achievement: 'Founder Startup Fashion'
-  },
-  {
-    name: 'Ahmad Rizki',
-    program: 'Teknik Sipil',
-    year: '2023',
-    image: '👷‍♂️',
-    rating: 5,
-    text: 'Fasilitas lab yang lengkap dan praktikum langsung di proyek nyata membuat aku siap kerja. Belum lulus sudah dapat job offer dari kontraktor besar.',
-    achievement: 'Project Engineer di Waskita'
-  },
-  {
-    name: 'Dewi Lestari',
-    program: 'Desain Komunikasi Visual',
-    year: '2024',
-    image: '🎨',
-    rating: 5,
-    text: 'Kampus yang sangat mendukung kreativitas! Portfolio yang aku buat selama kuliah langsung dilirik agency internasional. Terima kasih untuk semua mentornya!',
-    achievement: 'Creative Designer di Ogilvy'
+    text: 'Alhamdulillahi binikmatihi tatimusholihat.... Sampai hari ini kami sangat bersyukur ananda bisa diberikan kesempatan bergabung di Elfan AI academy. Setiap hari orang tua mendapatkan update aktivitas mahasantri yg masyaa Alloh jauh dari perkiraan kami sebelumnya. Tempat belajar yg aman nyaman, dengan bimbingan dan pendampingan para asatidz melalui halaqoh, materi pembelajaran IT yang sangat disenangi oleh anak, membuat kami semakin yakin dgn kurikulum adab AI-nya. Jazaakumulloh Khoiron kepada asatidz yg telah membimbing putra kami, semoga menjadi amal jariyah dan berkah buat Elfan AI Academy.. Baarokalloh fikum',
+    achievement: 'Wali Mahasantri'
   }
 ]
 
@@ -53,11 +33,11 @@ export function TestimonialSection() {
             Testimoni Alumni
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 font-poppins">
-            Kisah Sukses
-            <span className="block text-blue-600">Alumni Kami</span>
+            Apa Kata Mereka
+            <span className="block text-blue-600">Tentang Elfan?</span>
           </h2>
           <p className="text-lg text-gray-600">
-            Ribuan alumni telah meraih kesuksesan di berbagai bidang karir
+            Testimoni dari tokoh nasional dan wali mahasantri
           </p>
         </div>
 
@@ -95,8 +75,8 @@ export function TestimonialSection() {
                   <div className="text-4xl">{testimonial.image}</div>
                   <div>
                     <div className="font-bold text-gray-900">{testimonial.name}</div>
-                    <div className="text-sm text-gray-600">{testimonial.program}</div>
-                    <div className="text-xs text-gray-500">Lulusan {testimonial.year}</div>
+                    <div className="text-sm text-gray-600">{testimonial.title}</div>
+                    <div className="text-xs text-gray-500">{testimonial.achievement}</div>
                   </div>
                 </div>
               </CardContent>
@@ -105,15 +85,12 @@ export function TestimonialSection() {
         </div>
 
         {/* Trust Indicators */}
-        <div className="mt-16 text-center">
-          <p className="text-gray-600 mb-6">Dipercaya oleh perusahaan terkemuka:</p>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            <div className="text-2xl font-bold text-gray-400">GOJEK</div>
-            <div className="text-2xl font-bold text-gray-400">TOKOPEDIA</div>
-            <div className="text-2xl font-bold text-gray-400">BANK BCA</div>
-            <div className="text-2xl font-bold text-gray-400">TELKOM</div>
-            <div className="text-2xl font-bold text-gray-400">PERTAMINA</div>
-          </div>
+        <div className="mt-16 text-center bg-gradient-to-r from-blue-600 to-indigo-700 rounded-3xl p-12 text-white">
+          <h3 className="text-3xl font-bold mb-6">Ayo Gabung!</h3>
+          <p className="text-xl mb-4">Wujudkan Generasi Peradaban</p>
+          <p className="text-2xl font-bold mb-2">Pioneer IT Masa Depan</p>
+          <p className="text-lg">Bersama Kampus Adab & AI</p>
+          <p className="text-3xl font-bold mt-4">ELFAN AI ACADEMY</p>
         </div>
       </div>
     </section>
