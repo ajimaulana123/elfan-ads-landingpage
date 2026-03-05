@@ -18,8 +18,8 @@ export default function Home() {
       
       <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
         <HeroSection />
-        <ProgramSection />
         <WhyChooseUs />
+        <ProgramSection />
         <LecturerSection />
         <TestimonialSection />
         <RegistrationForm />
